@@ -217,14 +217,14 @@ Volumes come from SolidWorks *Mass Properties* for the 20 mm section.
 
 | # | Task | Output | Timing |
 |---|---|---|---|
-| 1 | Publish Stage 1 models (this repository) | SolidWorks parts, STEP files | Oct 2026 |
-| 2 | Redraw the star core at solid fraction 0.25 | Sixth wing, volume check | Oct 2026 |
-| 3 | Stage 2a: lattice coupons | ν and stiffness of each core | Nov 2026 |
-| 4 | Stage 2b: wing bending | Force/deflection, peak strain | Nov–Dec 2026 |
-| 5 | Stage 2c: modal and harmonic | Frequencies, amplitudes | Dec 2026–Jan 2027 |
-| 6 | Stage 2d: impact | Peak force, energy absorbed | Jan–Feb 2027 |
-| 7 | Stage 3: aerodynamics and TPU tests | Lift/drag change; measured data | Feb–Apr 2027 |
-| 8 | Write-up | Report and paper draft | May 2027 |
+| 1 | Publish Stage 1 models (this repository) | SolidWorks parts, STEP files | 
+| 2 | Redraw the star core at solid fraction 0.25 | Sixth wing, volume check | 
+| 3 | Stage 2a: lattice coupons | ν and stiffness of each core |
+| 4 | Stage 2b: wing bending | Force/deflection, peak strain |
+| 5 | Stage 2c: modal and harmonic | Frequencies, amplitudes |
+| 6 | Stage 2d: impact | Peak force, energy absorbed | 
+| 7 | Stage 3: aerodynamics tests | Lift/drag change; measured data | 
+| 8 | Write-up | Report and paper draft | 
 
 **Limitations.**
 - The 2-D plane-stress model ignores effects along the span.
@@ -253,7 +253,6 @@ eppler420-auxetic-wing-cores/
     └── check_volumes_mm3.json      volumes from SolidWorks Mass Properties
 ```
 
-**Opening the models.** The `.SLDPRT` files open in SolidWorks 2023 or later, with all dimensions as global variables (*Tools → Equations*). The `.STEP` files open in any CAD program but carry no feature history.
 
 ---
 
@@ -280,4 +279,4 @@ eppler420-auxetic-wing-cores/
 
 ---
 
-<sub>© 2026 Zahin Tasnim Ridita. Feedback and questions are welcome through GitHub Issues.</sub>
+<sub>© 2026 Zahin Tasnim Ridita. 
