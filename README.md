@@ -143,15 +143,6 @@ Every core follows the same three rules, so that **only the cell shape changes**
 | Anti-tetrachiral | pitch *P* = 20, ring radius *R* = 6 | 40 × 40 | negative |
 | Tetrachiral | pitch *P* = 16.5, node radius 0.15*P*, lattice turned 8° | 16.5 × 16.5 | negative, direction dependent |
 
-### Modelling in SolidWorks
-
-- **Parametric.** Global variables (`span = 20`, `t_skin = 2.5`, `t = 1.5`, `x_front = 65`, `x_rear = 490`, plus the cell dimensions) drive every feature, so changing one value rebuilds the lattice.
-- **Wing body.** The airfoil curves come in through *Curve Through XYZ Points* and are extruded into the solid wing. A second sketch, offset inwards by the skin thickness and closed at x = 65 and 490 mm, is used twice: once to cut the pocket and once to create the CoreBlock body.
-- **Lattices, two methods:**
-  - *Cutting holes* (hexagonal, double arrowhead, rotating squares): sketch the holes of one repeat unit, cut them into the CoreBlock only (*Feature Scope*), then repeat with a two-direction *Linear Pattern*.
-  - *Building walls* (anti-tetrachiral, tetrachiral): extrude the rings or nodes and ligaments of one unit as new bodies, pattern them, then trim to the pocket with *Combine → Common*.
-- **Finish.** *Combine → Add* joins the lattice to the wing, giving one solid body per wing. *Mass Properties* is used to check the volumes.
-
 ### Planned analyses (Stages 2–3)
 
 **Material:** TPU 95A, linear elastic for a first pass. E ≈ 26 MPa, ν = 0.45, ρ = 1210 kg/m³, 5% allowable strain. These values will be replaced by measurements from my own printed specimens.
